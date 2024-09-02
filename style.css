@@ -1,0 +1,162 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    padding: 0% 10% 0% 10%;
+    height: auto;
+    background: #000417;
+    color: white;
+    font-family: 'poppins', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+/* G É N É R A L */
+
+h1 {
+    font-size: 50px;
+    font-family: 'Syne', serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: 'Syne', serif;
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    background: #605DE2;
+    color: white;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+button:hover{
+    background: #5f5de276;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+strong{
+    font-weight: 300;
+}
+
+/* N A V I G A T I O N */
+
+header{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    z-index: 1;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+}
+
+nav img{
+    width: 50px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 60%;
+    list-style: none;
+    gap: 10%;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background: white;
+    transition: 0.5s;
+}
+
+a:hover:after {
+    width: 100%;
+}
+
+/* P A G E   A C C U E I L */
+
+.accueil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.accueil h2{
+    font-size: 80.5px;
+}
+
+.accueil div{
+    display: flex;
+    gap: 40px;
+}
+
+#cercle_bleu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background: #605DE2;
+    border-radius: 100%;
+    position:absolute;
+    z-index: -1;
+    filter: blur(500px);
+    animation: pulse 5s infinite ease-in-out;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1) translate(0, 0);
+        filter: blur(300px);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: scale(1.2) translate(-20px, 20px);
+        filter: blur(400px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1) translate(0, 0);
+        filter: blur(300px);
+        opacity: 0.8;
+    }
+}
