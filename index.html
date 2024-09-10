@@ -16,36 +16,49 @@
 <body>
         <header id="header">
             <nav>
-                <img src="media/logo-portfolio.png">
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="#apropos">À propos</a></li>
-                    <li><a href="#competences">Compétences</a></li>
-                    <li><a href="#projets">Projets</a></li>
-                </ul>
-                <button><a href="mailto:pinsonleo@hotmail.com">Contact</a></button>
+                <div class="ordinateur">
+                    <img src="media/logo-portfolio.png">
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="#apropos">À propos</a></li>
+                        <li><a href="#competences">Compétences</a></li>
+                        <li><a href="#projets">Projets</a></li>
+                    </ul>
+                    <button><a href="mailto:pinsonleo@hotmail.com">Contact</a></button>
+                </div>
+                <div class="telephone">
+                    <div class="wrapper">
+                        <div class="burger">
+                            <span class="burger__line burger__line_first"></span>
+                            <span class="burger__line burger__line_second"></span>
+                            <span class="burger__line burger__line_third"></span>
+                            <span class="burger__line burger__line_fourth"></span>
+                        </div>
+                    
+                    </div>
+                </div>
             </nav>
         </header>
         <div class="accueil">
             <h2>PINSON Léo</h2>
             <h1>Développeur front-end,<br> Ux/Ui Designer</h1>
-            <p><strong>Enchanté, je m’appelle Léo Pinson. Fraichement diplômé d’un Master dans le domaine du web,<br> je suis à la recherche
+            <p><strong>Enchanté, je m’appelle Léo Pinson. Fraîchement diplômé d’un Master spécialisé dans le domaine du web,<br> je suis à la recherche
             d'opportunités dans le développement front-end et le design UX/UI.</strong></p>
-            <div>
+            <div class="boutons-accueil">
                 <button><a href="mailto:pinsonleo@hotmail.com">Contacter par mail</a></button>
                 <button><a href="https://www.linkedin.com/in/l%C3%A9o-pinson-54bb16225/" target="_blank">Mon LinkedIn</a></button>
                 <button>Télécharger CV</button>
             </div>
             <div id="cercle_bleu"></div>
-            <span>↓ En savoir plus ↓</span>
+            <div class="scroll">
+                <span>En découvrir plus</span>
+                <div class="souris"></div>
+            </div>
         </div>
         <div class="apropos">
             <h2 id="apropos">À propos</h2>
             <div class="textephoto">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum natus saepe modi unde impedit incidunt neque fugit minus et, consequuntur consequatur molestiae nesciunt vel laborum hic voluptatem a voluptate in. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum natus saepe modi unde impedit incidunt neque fugit
-                minus et, consequuntur consequatur molestiae nesciunt vel laborum hic voluptatem a voluptate in. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum natus saepe modi unde impedit incidunt neque fugit
-                minus et, consequuntur consequatur molestiae nesciunt vel laborum hic voluptatem a voluptate in. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum natus saepe modi unde impedit incidunt neque fugit
-                minus et, consequuntur consequatur molestiae nesciunt vel laborum hic voluptatem a voluptate in.</p>
+                <p>Bonjour (ou bonsoir 🌙), comme présenté ci-dessus, je m'appelle Léo et j'ai 25 ans. Après avoir suivi un cursus orienté vers les métiers du web, je suis actuellement à la recherche d'opportunités en tant que développeur front-end ou Ux/Ui designer.<br>Depuis petit je suis passionné par le monde de l'informatique, avec ma licence et mon master fraîchement acquis j'ai su développer et affiner des compétences dans le domaine du web et notamment dans le développement web.<br><br>Ce portfolio présente les compétences que j'ai acquises ainsi que les projets que j'ai réalisés au cours de mes études et de mes expériences professionnelles. Alors, si mon profil vous intéresse, <a href="mailto:pinsonleo@hotmail.com">n'hésitez pas à me le faire savoir</a> 👋</p>
                 <img src="media/photoprofil.png">
             </div>
 
@@ -188,7 +201,7 @@
                 <img src="media/codezilla.png">
                 <div class="section-projet-info">
                     <h4>CodeZilla</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure quaerat ratione totam vero? Laboriosam velit iure quas ratione. Odit quos eaque iste ex beatae praesentium alias rerum? Asperiores, similique repudiandae.</p>
+                    <p>CodeZilla est un projet de groupe que nous avions à réaliser durant notre deuxième année de Master. Pour ce projet nous avions choisi de réaliser une plateforme d'apprentissage des langages de base sous forme ludique pour débuter en développement web.</p>
                     <div class="tags">
                         <p>Tags :</p>
                         <ul>
@@ -200,18 +213,24 @@
                 </div>
             </div>
             <div class="section-projet">
+                <img src="media/gtn.png">
                 <div class="section-projet-info">
-                    <h4>S'il Vin</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure quaerat ratione totam vero? Laboriosam velit iure quas ratione. Odit quos eaque iste ex beatae praesentium alias rerum? Asperiores, similique repudiandae.</p>
+                    <h4>Jeu "Guess the number"</h4>
+                    <p>Création d'un jeu en javascript. Partant d'un programme débutant de base en poussant certaines fonctionnalités (Compteur de vies, choix de la difficulté, ajout d'un mode sombre ...)<br>Projet très formateur dans la compréhension de JavaScript.</p>
+                    <div class="tags">
+                        <p>Tags :</p>
+                        <ul>
+                            <li>Développement</li>
+                        </ul>
+                    </div>
                     <button>Voir le projet</button>
                 </div>
-                <img src="media/codezilla.png">
             </div>
             <div class="section-projet">
                 <img src="media/portfolio.png">
                 <div class="section-projet-info">
                     <h4>Portfolio personnel</h4>
-                    <p>Création de mon portfolio professionnel.</p>
+                    <p>Création du portfolio que vous êtes actuellement en train de regarder :)<br>Projet comprenant la réalisation d'une maquette Figma et du développement from scratch. </p>
                     <div class="tags">
                         <p>Tags :</p>
                         <ul>
@@ -243,9 +262,6 @@
                 <span><a href="#header">↑</a></span>
             </div>
         </footer>
-        <div class="remonter">
-            <a href="#header"><span>↑</span></a>
-        </div>
     
 </body>
 </html>
