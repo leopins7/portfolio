@@ -1103,6 +1103,11 @@ footer {
 
 @media screen and (max-width: 768px) {
     /* NAVIGATION */
+
+    header{
+        height: 60px;
+    }
+
     .telephone {
         display: flex;
     }
@@ -1125,10 +1130,6 @@ footer {
     }
 
     /* ACCUEIL */
-
-    .accueil{
-        margin-top: -10%;
-    }
 
     /* À PROPOS */
 
@@ -1213,11 +1214,11 @@ footer {
         }
     
         .carousel-container {
-            width: 350px;
+            width: 80%;
         }
     
         .carousel-images {
-            height: 200px;
+            height: auto;
         }
     
         .infos-popup {
