@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,111 +14,444 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400..800&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
-        <header id="header">
-            <nav>
-                <div class="ordinateur">
-                    <img src="media/logo-portfolio.png">
+    <header id="header">
+        <nav>
+            <div class="ordinateur">
+                <img src="media/logo-portfolio.png">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="mailto:pinsonleo@hotmail.com">Contact</a></li>
+                </ul>
+            </div>
+            <div class="telephone">
+                <div class="menu-btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="header-nav">
+                    <div class="nav">
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="#apropos">À propos</a></li>
+                            <li><a href="#competences">Compétences</a></li>
+                            <li><a href="#projets">Projets</a></li>
+                            <li><a href="mailto:pinsonleo@hotmail.com">Me contacter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="accueil">
+        <h2>PINSON Léo</h2>
+        <h1>Développeur front-end,<br> Ux/Ui Designer</h1>
+        <p><strong>Enchanté, je m’appelle Léo Pinson. Fraîchement diplômé d’un Master spécialisé dans le domaine du
+                web,<br> je suis à la recherche
+                d'opportunités dans le développement front-end et le design UX/UI.</strong></p>
+        <div class="boutons-accueil">
+            <button><a href="mailto:pinsonleo@hotmail.com">Contacter par mail</a></button>
+            <button><a href="https://www.linkedin.com/in/l%C3%A9o-pinson-54bb16225/" target="_blank">Mon
+                    LinkedIn</a></button>
+            <button>Télécharger CV</button>
+        </div>
+        <div id="cercle_bleu"></div>
+        <div class="scroll">
+            <span>En découvrir plus</span>
+            <div class="souris"></div>
+        </div>
+    </div>
+    <div class="apropos">
+        <h2 id="apropos">À propos</h2>
+        <div class="textephoto">
+            <p>Bonjour (ou bonsoir 🌙), comme présenté ci-dessus, je m'appelle Léo et j'ai 25 ans. Après avoir suivi un
+                cursus orienté vers les métiers du web, je suis actuellement à la recherche d'opportunités en tant que
+                développeur front-end ou Ux/Ui designer.<br>Depuis petit je suis passionné par le monde de
+                l'informatique, avec ma licence et mon master fraîchement acquis j'ai su développer et affiner des
+                compétences dans le domaine du web et notamment dans le développement web.<br><br>Ce portfolio présente
+                les compétences que j'ai acquises ainsi que les projets que j'ai réalisés au cours de mes études et de
+                mes expériences professionnelles. Alors, si mon profil vous intéresse, <a
+                    href="mailto:pinsonleo@hotmail.com">n'hésitez pas à me le faire savoir</a> 👋</p>
+            <img src="media/photoprofil.png">
+        </div>
+
+
+        <div class="formations-experiencespro">
+            <div class="section_formations-experiencespro">
+                <h3>Formations</h3>
+                <div class="experience">
+                    <div class="experience-info">
+                        <h4 id="h4-popup1" data-popup-experiences-id="1">Université Gustave Eiffel</h4>
+                        <h5>Master Cultures et Métiers du Web</h5>
+                    </div>
+                    <div class="experience-date">
+                        <span>• &nbsp;09 / 2022 - 09 / 2024</span>
+                    </div>
+                </div>
+                <!-- POPUP FORMATION 1 -->
+                <div id="popup-experiences-1" class="plus-info gauche none" data-popup-experiences-id="1">
+                    <div class="close">X</div>
+                    <h4>Master Cultures et Métiers du Web</h4>
+                    <p>Le Master Cultures et Métiers du Web (CMW) de l'Université Gustave Eiffel est un diplôme pluridisciplinaire de niveau
+                        Bac +5. Il forme des étudiants aux métiers du numérique et de la communication digitale. La formation est structurée
+                        autour de cinq pôles : sciences sociales et numérique, cultures visuelles, codage,
+                        projets et création, et langue. En première année, un mémoire de recherche est réalisé, tandis que la deuxième année
+                        est
+                        dédiée aux projets web. Le master CMW est une formation en alternance.</p>
+                    <a href="https://formations.univ-gustave-eiffel.fr/master/detail/cultures-et-metiers-du-web-cmw-136" target="_blank"><button>En savoir plus</button></a>
+                </div>
+                <div class="experience">
+                    <div class="experience-info">
+                        <h4 id="h4-popup2" data-popup-experiences-id="2">Université Gustave Eiffel</h4>
+                        <h5>Licence Sociologie Sociétés et Cultures Numériques</h5></h5>
+                    </div>
+                    <div class="experience-date">
+                        <span>• &nbsp;09 / 2018 - 09 / 2022</span>
+                    </div>
+                </div>
+                <!-- POPUP FORMATION 2 -->
+                <div id="popup-experiences-2" class="plus-info gauche none" data-popup-experiences-id="2">
+                    <div class="close">X</div>
+                    <h4>Licence Sociologie Sociétés et Cultures Numériques</h4>
+                    <p>Le parcours L3 Sociologie Sociétés et cultures numériques permet d'acquérir des compétences utiles dans divers secteurs.
+                    Les étudiants développent leur analyse critique de documents et débats, ainsi que leurs capacités d'expression écrite et
+                    orale. Ils maîtrisent des connaissances sur les espaces locaux et globaux, des méthodes de recherche en humanités
+                    numériques, des compétences en aménagement et urbanisme, et l'analyse des enjeux sociaux liés à la géographie et aux
+                    politiques territoriales. Ils acquièrent également des savoir-faire en analyse de données et communication.</p>
+                    <a href="https://formations.univ-gustave-eiffel.fr/?type=10&pdfId=324?lang=en" target="_blank"><button>En savoir plus</button></a>
+                </div>
+            </div>
+            <div class="section_formations-experiencespro">
+                <h3>Expériences Professionnelles</h3>
+                <div class="experience">
+                    <div class="experience-info">
+                        <h4 id="h4-popup3" data-popup-experiences-id="3">Axalone France</h4>
+                        <h5>WebMarketing (Stage)</h5>
+                    </div>
+                    <div class="experience-date">
+                        <span>• &nbsp;03 / 2024 - 08 / 2024</span>
+                    </div>
+                </div>
+                <!-- POPUP FORMATION 3 -->
+                <div id="popup-experiences-3" class="plus-info droite none" data-popup-experiences-id="3">
+                    <div class="close">X</div>
+                    <h4>Stage WebMarketing chez Axalone France</h4>
+                    <p>Suite à la liquidation judiciaire de l'entreprise dans laquelle j'étais en alternance, j'ai continué en stage chez Axalone France jusqu'à la fin de mon cursus. Chez Axalone France, j'avais comme mission principale de moderniser leur site web principal qui se faisait vieillissant. Mes missions étaient donc de créer de nouveaux modules Joomla! avec de nouvelle illustrations qui collaient mieux avec leur univers. </p>
+                    <a href="https://formations.univ-gustave-eiffel.fr/?type=10&pdfId=324?lang=en" target="_blank"><button>En savoir
+                            plus</button></a>
+                </div>
+                <div class="experience">
+                    <div class="experience-info">
+                        <h4  id="h4-popup4" data-popup-experiences-id="4">Ride More</h4>
+                        <h5>Assistant digital & Consultant SEO (alternance)</h5>
+                    </div>
+                    <div class="experience-date">
+                        <span>• &nbsp;10 / 2022 - 12 / 2023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cercle_orange"></div>
+    </div>
+    <!-- Compétences -->
+    <div class="competences">
+        <h2 id="competences">Compétences</h2>
+        <div class="container-competences">
+            <div class="bloc-competences">
+                <h3>CMS</h3>
+                <div class="contenu-competences">
+                    <div class="competences-texte">
+                        <img src="media/shopify.png" alt="Logo Shopify">
+                        <div class="bg-media vert"></div>
+                        <span>Shopify</span>
+                    </div>
+                    <div class="competences-texte">
+                        <img src="media/wordpress.png" alt="Logo Wordpress">
+                        <div class="bg-media bleu"></div>
+                        <span>WordPress</span>
+                    </div>
+                </div>
+                <div class="contenu-competences">
+                    <div class="competences-texte">
+                        <img src="media/joomla.png" alt="Logo Joomla!">
+                        <div class="bg-media rouge"></div>
+                        <span>Joomla!</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bloc-competences">
+                <h3>Langages</h3>
+                <div class="contenu-competences">
+                    <div class="competences-texte">
+                        <img src="media/html.png" alt="Logo HTML5">
+                        <div class="bg-media orange"></div>
+                        <span>HTML</span>
+                    </div>
+                    <div class="competences-texte">
+                        <img src="media/css.png" alt="Logo CSS3">
+                        <div class="bg-media bleu"></div>
+                        <span>CSS</span>
+                    </div>
+                </div>
+                <div class="contenu-competences">
+                    <div class="competences-texte">
+                        <img src="media/javascript.png" alt="Logo javascript">
+                        <div class="bg-media jaune"></div>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="competences-texte">
+                        <img src="media/php.png" alt="Logo PHP">
+                        <div class="bg-media gris"></div>
+                        <span>PHP</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bloc-competences">
+                <h3>Graphisme</h3>
+                <div class="contenu-competences">
+                    <div class="competences-texte">
+                        <img src="media/ai.png" alt="Logo Adobe Illustrator">
+                        <div class="bg-media orange"></div>
+                        <span>Adobe Illustrator</span>
+                    </div>
+                    <div class="competences-texte">
+                        <img src="media/pixelmator.png" alt="Logo pixelmator">
+                        <div class="bg-media orange"></div>
+                        <span>Pixelmator Pro</span>
+                    </div>
+                </div>
+                <div class="contenu-competences">
+                    <div class="competences-texte">
+                        <img src="media/pr.png" alt="Logo Première Pro">
+                        <div class="bg-media gris"></div>
+                        <span>Première Pro</span>
+                    </div>
+                    <div class="competences-texte">
+                        <img src="media/figma.png" alt="Logo Figma">
+                        <div class="bg-media bleu"></div>
+                        <span>Figma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projets -->
+    <div class="projets">
+        <h2 id="projets">Mes projets</h2>
+        <div class="section-projet">
+            <img src="media/projets/codezilla/01.webp">
+            <div class="section-projet-info">
+                <h4>CodeZilla</h4>
+                <p>CodeZilla est un projet de groupe que nous avions à réaliser durant notre deuxième année de Master.
+                    Pour ce projet nous avions choisi de réaliser une plateforme d'apprentissage des langages de base
+                    sous forme ludique pour débuter en développement web.</p>
+                <div class="tags">
+                    <p>Tags :</p>
                     <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="#apropos">À propos</a></li>
-                        <li><a href="#competences">Compétences</a></li>
-                        <li><a href="#projets">Projets</a></li>
+                        <li>Ux/Ui</li>
+                        <li>Graphisme</li>
                     </ul>
-                    <button><a href="mailto:pinsonleo@hotmail.com">Contact</a></button>
                 </div>
-                <div class="telephone">
-                    <div class="wrapper">
-                        <div class="burger">
-                            <span class="burger__line burger__line_first"></span>
-                            <span class="burger__line burger__line_second"></span>
-                            <span class="burger__line burger__line_third"></span>
-                            <span class="burger__line burger__line_fourth"></span>
-                        </div>
-                    
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <div class="accueil">
-            <h2>PINSON Léo</h2>
-            <h1>Développeur front-end,<br> Ux/Ui Designer</h1>
-            <p><strong>Enchanté, je m’appelle Léo Pinson. Fraîchement diplômé d’un Master spécialisé dans le domaine du web,<br> je suis à la recherche
-            d'opportunités dans le développement front-end et le design UX/UI.</strong></p>
-            <div class="boutons-accueil">
-                <button><a href="mailto:pinsonleo@hotmail.com">Contacter par mail</a></button>
-                <button><a href="https://www.linkedin.com/in/l%C3%A9o-pinson-54bb16225/" target="_blank">Mon LinkedIn</a></button>
-                <button>Télécharger CV</button>
-            </div>
-            <div id="cercle_bleu"></div>
-            <div class="scroll">
-                <span>En découvrir plus</span>
-                <div class="souris"></div>
+                <button id="bouton-popup1" data-popup-id="1">Voir le projet</button>
             </div>
         </div>
-        <div class="apropos">
-            <h2 id="apropos">À propos</h2>
-            <div class="textephoto">
-                <p>Bonjour (ou bonsoir 🌙), comme présenté ci-dessus, je m'appelle Léo et j'ai 25 ans. Après avoir suivi un cursus orienté vers les métiers du web, je suis actuellement à la recherche d'opportunités en tant que développeur front-end ou Ux/Ui designer.<br>Depuis petit je suis passionné par le monde de l'informatique, avec ma licence et mon master fraîchement acquis j'ai su développer et affiner des compétences dans le domaine du web et notamment dans le développement web.<br><br>Ce portfolio présente les compétences que j'ai acquises ainsi que les projets que j'ai réalisés au cours de mes études et de mes expériences professionnelles. Alors, si mon profil vous intéresse, <a href="mailto:pinsonleo@hotmail.com">n'hésitez pas à me le faire savoir</a> 👋</p>
-                <img src="media/photoprofil.png">
-            </div>
-
-        
-            <div class="formations-experiencespro">
-                <div class="section_formations-experiencespro">
-                    <h3>Formations</h3>
-                    <div class="experience">
-                        <div class="experience-info">
-                            <h4>Université Gustave Eiffel</h4>
-                            <h5>Master Cultures et Métiers du Web</h5>
-                        </div>
-                        <div class="experience-date">
-                            <span>• &nbsp;09 / 2022 - 09 / 2024</span>
-                        </div>
-                    </div>
-                    <div class="experience">
-                        <div class="experience-info">
-                            <h4>Université Gustave Eiffel</h4>
-                            <h5>Licence Sociologie Sociétés et Cultures Numériques</h5>
-                        </div>
-                        <div class="experience-date">
-                            <span>• &nbsp;09 / 2018 - 09 / 2022</span>
-                        </div>
-                    </div>
+        <div class="section-projet">
+            <img src="media/gtn.png">
+            <div class="section-projet-info">
+                <h4>Jeu "Guess the number"</h4>
+                <p>Création d'un jeu en javascript. Partant d'un programme débutant de base en poussant certaines
+                    fonctionnalités (Compteur de vies, choix de la difficulté, ajout d'un mode sombre ...)<br>Projet
+                    très formateur dans la compréhension de JavaScript.</p>
+                <div class="tags">
+                    <p>Tags :</p>
+                    <ul>
+                        <li>Développement</li>
+                    </ul>
                 </div>
-                <div class="section_formations-experiencespro">
-                    <h3>Expériences Professionnelles</h3>
-                    <div class="experience">
-                        <div class="experience-info">
-                            <h4>Axalone France</h4>
-                            <h5>WebMarketing (Stage)</h5>
-                        </div>
-                        <div class="experience-date">
-                            <span>• &nbsp;03 / 2024 - 08 / 2024</span>
-                        </div>
-                    </div>
-                    <div class="experience">
-                        <div class="experience-info">
-                            <h4>Ride More</h4>
-                            <h5>Assistant digital & Consultant SEO (alternance)</h5>
-                        </div>
-                        <div class="experience-date">
-                            <span>• &nbsp;10 / 2022 - 12 / 2023</span>
-                        </div>
-                    </div>
-                </div>
+                <button id="bouton-popup2" data-popup-id="2">Voir le projet</button>
             </div>
-            
-            <div id="cercle_orange"></div>
         </div>
+        <div class="section-projet">
+            <img src="media/portfolio.png">
+            <div class="section-projet-info">
+                <h4>Portfolio personnel</h4>
+                <p>Création du portfolio que vous êtes actuellement en train de regarder :)<br>Projet comprenant la
+                    réalisation d'une maquette Figma et du développement from scratch. </p>
+                <div class="tags">
+                    <p>Tags :</p>
+                    <ul>
+                        <li>Ux/Ui</li>
+                        <li>Graphisme</li>
+                        <li>Développement</li>
+                    </ul>
+                </div>
+                <button id="bouton-popup3" data-popup-id="3">Voir le projet</button>
+            </div>
+        </div>
+        <a href="projets.html">Voir tous mes projets</a>
+    </div>
+    <!-- Pop-up projets -->
+    <div id="popup1" class="popup none" data-popup-id="1">
+        <div class="bloc-popup">
+            <div class="close">X</div>
+            <div class="carousel-container">
+                <div class="carousel-images">
+                    <img src="media/projets/codezilla/01.webp" alt="Page d'accueil de CodeZilla">
+                    <img src="media/projets/codezilla/02.webp" alt="Carte intéractive des exercices">
+                    <img src="media/projets/codezilla/03.webp" alt='Mini-jeu exercice "CodeDating"'>
+                    <img src="media/projets/codezilla/04.webp" alt="Profil utilisateur avec son avancement">
+                </div>
+            </div>
+            <div class="infos-popup">
+                <div class="bloc-popup-gauche">
+                    <div class="description-popup">
+                        <p>CodeZilla est un projet de groupe que nous avions à réaliser durant notre deuxième année de Master. Pour ce projet nous
+                        avions choisi de réaliser une plateforme d'apprentissage des langages de base sous forme ludique pour débuter en
+                        développement web.</p>
+                    </div>
+                    <div class="tags-popup">
+                        <div>
+                            <img src="media/personnage.png" alt="Icône profil">
+                            <span>Projet de groupe</span>
+                        </div>
+                        <div>
+                            <img src="media/role.png" alt="Icône rôle">
+                            <span>Ux/Ui - Graphisme</span>
+                        </div>
 
-        <!-- Compétences -->
-        <div class="competences">
-            <h2 id="competences">Compétences</h2>
-            <div class="container-competences">
-                <div class="bloc-competences">
+                    </div>
+                </div>
+                <div class="bloc-popup-droite">
+                    <ul>
+                        <li>✓ Réalisation de la maquette figma</li>
+                        <li>✓ Conception de l’Ux/Ui</li>
+                        <li>✓ Réalisation des visuels du projet</li>
+                    </ul>
+                    <button>Accéder au site</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup2" class="popup none" data-popup-id="2">
+        <div class="bloc-popup">
+            <div class="close">X</div>
+            <div class="carousel-container">
+                <div class="carousel-images">
+                    <img src="media/projets/codezilla/01.webp" alt="Page d'accueil de ">
+                    <img src="media/projets/codezilla/02.webp" alt="Carte intéractive des exercices">
+                    <img src="media/projets/codezilla/03.webp" alt='Mini-jeu exercice "CodeDating"'>
+                    <img src="media/projets/codezilla/04.webp" alt="Profil utilisateur avec son avancement">
+                </div>
+            </div>
+            <div class="infos-popup">
+                <div class="bloc-popup-gauche">
+                    <div class="description-popup">
+                        <p>Création d'un jeu "GuessTheNumber" en javascript. Partant d'un programme débutant de base en poussant certaines fonctionnalités (Compteur
+                        de vies, choix de la difficulté, ajout d'un mode sombre ...)
+                        Projet très formateur dans la compréhension de JavaScript.</p>
+                    </div>
+                    <div class="tags-popup">
+                        <div>
+                            <img src="media/personnage.png" alt="Icône profil">
+                            <span>Projet personnel</span>
+                        </div>
+                        <div>
+                            <img src="media/role.png" alt="Icône rôle">
+                            <span>Développement</span>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="bloc-popup-droite">
+                    <ul>
+                        <li>✓ Réalisation de la maquette figma</li>
+                        <li>✓ Conception de l’Ux/Ui</li>
+                        <li>✓ Réalisation des visuels du projet</li>
+                    </ul>
+                    <button>Accéder au site</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup3" class="popup none" data-popup-id="3">
+        <div class="bloc-popup">
+            <div class="close">X</div>
+            <div class="carousel-container">
+                <div class="carousel-images">
+                    <img src="media/portfolio.png" alt="Page d'accueil de ">
+                    <img src="media/projets/codezilla/02.webp" alt="Carte intéractive des exercices">
+                    <img src="media/projets/codezilla/03.webp" alt='Mini-jeu exercice "CodeDating"'>
+                    <img src="media/projets/codezilla/04.webp" alt="Profil utilisateur avec son avancement">
+                </div>
+            </div>
+            <div class="infos-popup">
+                <div class="bloc-popup-gauche">
+                    <div class="description-popup">
+                        <p>Création du portfolio que vous êtes actuellement en train de regarder. Plus gros projet personnel à ce jour. Il comprend le maquettage Figma, l'Ui/Ux, le développement du site et son hébérgement (sur GitHub)</p>
+                    </div>
+                    <div class="tags-popup">
+                        <div>
+                            <img src="media/personnage.png" alt="Icône profil">
+                            <span>Projet personnel</span>
+                        </div>
+                        <div>
+                            <img src="media/role.png" alt="Icône rôle">
+                            <span>Ux/Ui - Graphisme - Développement</span>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="bloc-popup-droite">
+                    <ul>
+                        <li>✓ Réalisation de la maquette figma</li>
+                        <li>✓ Conception de l’Ux/Ui</li>
+                        <li>✓ Réalisation des visuels du projet</li>
+                    </ul>
+                    <button>Accéder au site</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-info">
+            <p>©2024</p>
+            <p>Imaginé et développé<br>par PINSON Léo</p>
+        </div>
+        <div class="footer-contact">
+            <p><strong>Me contacter</strong></p>
+            <div>
+                <a href="https://www.linkedin.com/in/l%C3%A9o-pinson-54bb16225/" target="_blank"><img
+                        src="media/linkedin.png" alt="Icone linkedin"></a>
+                <a href="mailto:pinsonleo@hotmail.com"><img src="media/mail.png" alt="Icone mail"></a>
+            </div>
+        </div>
+        <div class="footer-remonter">
+            <span>Remonter en haut</span>
+            <span><a href="#header">↑</a></span>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+<!-- Changer bouton en a dans la nav
+    Mettre alt sur les images
+    13% pour larger screen
+
+
+    <div class="bloc-competences">
                     <h3>CMS</h3>
-                    <div class="contenu-competences">
                         <div class="competences-texte">
                             <img src="media/shopify.png" alt="Logo Shopify">
                             <div class="bg-media vert"></div>
@@ -128,147 +462,14 @@
                             <div class="bg-media bleu"></div>
                             <span>WordPress</span>
                         </div>
-                    </div>
-                    <div class="contenu-competences">
+                    
                         <div class="competences-texte">
                             <img src="media/joomla.png" alt="Logo Joomla!">
                             <div class="bg-media rouge"></div>
                             <span>Joomla!</span>
                         </div>
-                    </div>
+                    
                 </div>
-                <div class="bloc-competences">
-                    <h3>Langages</h3>
-                    <div class="contenu-competences">
-                        <div class="competences-texte">
-                            <img src="media/html.png" alt="Logo HTML5">
-                            <div class="bg-media orange"></div>
-                            <span>HTML</span>
-                        </div>
-                        <div class="competences-texte">
-                            <img src="media/css.png" alt="Logo CSS3">
-                            <div class="bg-media bleu"></div>
-                            <span>CSS</span>
-                        </div>
-                    </div>
-                    <div class="contenu-competences">
-                        <div class="competences-texte">
-                            <img src="media/javascript.png" alt="Logo javascript">
-                            <div class="bg-media jaune"></div>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="competences-texte">
-                            <img src="media/php.png" alt="Logo PHP">
-                            <div class="bg-media gris"></div>
-                            <span>PHP</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="bloc-competences">
-                    <h3>Graphisme</h3>
-                    <div class="contenu-competences">
-                        <div class="competences-texte">
-                            <img src="media/ai.png" alt="Logo Adobe Illustrator">
-                            <div class="bg-media orange"></div>
-                            <span>Adobe Illustrator</span>
-                        </div>
-                        <div class="competences-texte">
-                            <img src="media/pixelmator.png" alt="Logo pixelmator">
-                            <div class="bg-media orange"></div>
-                            <span>Pixelmator Pro</span>
-                        </div>
-                    </div>
-                    <div class="contenu-competences">
-                        <div class="competences-texte">
-                            <img src="media/pr.png" alt="Logo Première Pro">
-                            <div class="bg-media gris"></div>
-                            <span>Première Pro</span>
-                        </div>
-                        <div class="competences-texte">
-                            <img src="media/figma.png" alt="Logo Figma">
-                            <div class="bg-media bleu"></div>
-                            <span>Figma</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Projets -->
-        <div class="projets">
-            <h2 id="projets">Mes projets</h2>
-            <div class="section-projet">
-                <img src="media/codezilla.png">
-                <div class="section-projet-info">
-                    <h4>CodeZilla</h4>
-                    <p>CodeZilla est un projet de groupe que nous avions à réaliser durant notre deuxième année de Master. Pour ce projet nous avions choisi de réaliser une plateforme d'apprentissage des langages de base sous forme ludique pour débuter en développement web.</p>
-                    <div class="tags">
-                        <p>Tags :</p>
-                        <ul>
-                            <li>Ux/Ui</li>
-                            <li>Graphisme</li>
-                        </ul>
-                    </div>
-                    <button>Voir le projet</button>
-                </div>
-            </div>
-            <div class="section-projet">
-                <img src="media/gtn.png">
-                <div class="section-projet-info">
-                    <h4>Jeu "Guess the number"</h4>
-                    <p>Création d'un jeu en javascript. Partant d'un programme débutant de base en poussant certaines fonctionnalités (Compteur de vies, choix de la difficulté, ajout d'un mode sombre ...)<br>Projet très formateur dans la compréhension de JavaScript.</p>
-                    <div class="tags">
-                        <p>Tags :</p>
-                        <ul>
-                            <li>Développement</li>
-                        </ul>
-                    </div>
-                    <button>Voir le projet</button>
-                </div>
-            </div>
-            <div class="section-projet">
-                <img src="media/portfolio.png">
-                <div class="section-projet-info">
-                    <h4>Portfolio personnel</h4>
-                    <p>Création du portfolio que vous êtes actuellement en train de regarder :)<br>Projet comprenant la réalisation d'une maquette Figma et du développement from scratch. </p>
-                    <div class="tags">
-                        <p>Tags :</p>
-                        <ul>
-                            <li>Ux/Ui</li>
-                            <li>Graphisme</li>
-                            <li>Développement</li>
-                        </ul>
-                    </div>
-                    <button>Voir le projet</button>
-                </div>
-            </div>
-            <a href="">Voir tous mes projets</a>
-        </div>
-        <!-- Footer -->
-        <footer>
-            <div class="footer-info">
-                <p>©2024</p>
-                <p>Imaginé et développé<br>par PINSON Léo</p>
-            </div>
-            <div class="footer-contact">
-                <p><strong>Me contacter</strong></p>
-                <div>
-                    <a href="https://www.linkedin.com/in/l%C3%A9o-pinson-54bb16225/" target="_blank"><img src="media/linkedin.png" alt="Icone linkedin"></a>
-                    <a href="mailto:pinsonleo@hotmail.com"><img src="media/mail.png" alt="Icone mail"></a>
-                </div>
-            </div>
-            <div class="footer-remonter">
-                <span>Remonter en haut</span>
-                <span><a href="#header">↑</a></span>
-            </div>
-        </footer>
-    
-</body>
-</html>
-
-<!-- Changer bouton en a dans la nav
-    Mettre alt sur les images
-    
  
 
 -->
