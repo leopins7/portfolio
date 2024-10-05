@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0% 10% 0% 10%;
     height: auto;
-    background: red;
+    background: #000311;
     color: white;
     font-family: 'poppins', sans-serif;
     font-weight: 300;
@@ -1250,6 +1250,14 @@ footer {
     
         .bloc-popup-droite button {
             margin-bottom: 20px;
+        }
+
+        .tags-popup span, .description-popup p, .bloc-popup-droite{
+            font-size: 10px;
+        }
+
+        .tags-popup img{
+            width: 15px;
         }
 
     /* FOOTER */
