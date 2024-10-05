@@ -769,7 +769,7 @@ a:hover:after {
 }
 
 .none{
-    display: none;
+    display: none!important;
 }
 
 .noscroll{
@@ -1204,13 +1204,16 @@ footer {
     }
 
         /* POPUP PROJETS */
-    
-        .popup {
-            margin: 15% 0% 0% 0%;
+
+        .bloc-popup .close{
+            position: fixed;
+            top: -5%;
+            left: 10%;
         }
     
         .bloc-popup {
             align-items: center;
+            margin-top: 5%;
         }
     
         .carousel-container {

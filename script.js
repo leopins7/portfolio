@@ -4,18 +4,21 @@ const popUp = document.querySelectorAll(".popup");
 const popUpInfo = document.querySelectorAll(".popup-info");
 const menuDesktop = document.querySelector(".ordinateur");
 const windowHeight = window.innerHeight;
+const nav = document.querySelector("nav");
 let topLimit = windowHeight * 0.1;
+
 
 
 // P O P   U P   P R O J E T S
 
+//Ouverture popup
 boutonsPopUp.forEach((bouton) => {
     bouton.addEventListener("click", () => {
         const popupId = bouton.getAttribute("data-popup-id");
         const popup = document.querySelector(`.popup[data-popup-id="${popupId}"]`);
         popup.classList.remove("none");
+        nav.classList.add("none")
         body.classList.add("noscroll");
-        menuDesktop.classList.add("active-nav-desktop")
         topLimit = -1;
 
         setTimeout(() => {
@@ -24,6 +27,7 @@ boutonsPopUp.forEach((bouton) => {
     });
 });
 
+//Fermeture popup
 popUp.forEach((popup) => {
     const blocPopup = popup.querySelector(".bloc-popup");
     const closeButton = popup.querySelector(".close"); 
