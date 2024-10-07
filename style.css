@@ -189,7 +189,7 @@ a:hover:after {
 
 .menu-btn .bar {
     width: 30px;
-    height: 4px;
+    height: 2px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -247,8 +247,8 @@ a:hover:after {
 
 .nav ul{
     list-style-type: none;
-    font-size: 25px;
-    height: 100%;
+    font-size: 20px;
+    height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -279,6 +279,20 @@ a:hover:after {
     width: 50%;
 }
 
+.boutons-accueil-telephone {
+    display: none;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.boutons-accueil-telephone button{
+    width: 50%;
+}
+
+.boutons-accueil-telephone img{
+    width: 30px;
+}
+
 .accueil h2 {
     font-size: 80.5px;
     color: white;
@@ -299,12 +313,12 @@ a:hover:after {
     align-items: center;
     width: 300px;
     height: 300px;
-    background: #605DE2;
+    background: #5F5DE2;
     border-radius: 100%;
     position: absolute;
     z-index: -1;
     filter: blur(200px);
-    animation: pulse 5s infinite ease-in-out;
+    animation: pulse 4s infinite ease-in-out;
 }
 
 .scroll {
@@ -420,8 +434,8 @@ a:hover:after {
 .experience-info h4::after {
     content: "?";
     font-size: 10px;
-    background-color: rgba(255, 255, 255, 0.619);
-    color: #000311;
+    background-color: rgb(94, 92, 224);
+    color: #ffffff;
     border-radius: 100px;
     padding: 5px;
     margin-left: 15px;
@@ -438,6 +452,7 @@ a:hover:after {
 
 .experience-info h4:hover::after{
     background-color: rgb(255, 255, 255);
+    color: rgb(94, 92, 224);
     cursor: pointer;
 }
 
@@ -588,6 +603,7 @@ a:hover:after {
     gap: 100px;
 }
 
+
 .projets a {
     text-decoration: underline;
 }
@@ -597,7 +613,7 @@ a:hover:after {
     gap: 30px;
 }
 
-.section-projet:nth-child(odd) {
+.row-reverse {
     flex-direction: row-reverse;
 }
 
@@ -944,19 +960,19 @@ footer {
 @keyframes pulse {
     0% {
         transform: scale(1) translate(0, 0);
-        filter: blur(150px);
+        filter: blur(120px);
         opacity: 1;
     }
 
     50% {
         transform: scale(1.4) translate(-20px, 20px);
-        filter: blur(200px);
+        filter: blur(170px);
         opacity: 1;
     }
 
     100% {
         transform: scale(1) translate(0, 0);
-        filter: blur(150px);
+        filter: blur(120px);
         opacity: 1;
     }
 }
@@ -1105,7 +1121,7 @@ footer {
     /* NAVIGATION */
 
     header{
-        height: 60px;
+        height: 50px;
     }
 
     .telephone {
@@ -1131,6 +1147,33 @@ footer {
 
     /* ACCUEIL */
 
+    .accueil h2{
+        font-size: 40px;
+    }
+
+    .accueil h1{
+        font-size: 25px;
+    }
+
+    .scroll{
+        position: relative;
+        top: 5%;
+        bottom: auto;
+    }
+
+    .boutons-accueil-telephone{
+        display: flex;
+    }
+
+    .boutons-accueil-telephone button {
+        font-size: 19px;
+        font-weight: bold;
+    }
+
+    .boutons-accueil{
+        display: none;
+    }
+
     /* À PROPOS */
 
     .textephoto {
@@ -1139,6 +1182,11 @@ footer {
 
     .textephoto img {
         width: 230px;
+    }
+
+    #cercle_orange {
+        left: -200px;
+        background-color: #ffa74236;
     }
 
     /* COMPÉTENCES */
@@ -1173,6 +1221,8 @@ footer {
 
     .plus-info{
         width: 70%;
+        position: fixed;
+        top: 10%;
     }
 
     .gauche{
@@ -1271,6 +1321,15 @@ footer {
         width: 15px;
     }
 
+    /* PAGE TOUS MES PROJETS
+    .filtre{
+        position: sticky;
+        top: 10px;
+        left: 20px;
+        margin-left: 40px!important;
+        z-index: 3;
+    } */
+
 }
 
 
@@ -1290,3 +1349,29 @@ footer {
 
 /* FENÊTRES PROJETS */
 
+.developpement, .graphisme, .uxui, .autre{
+    display: flex;
+}
+
+.filtre{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.filtre select{
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.084);
+    padding: 8px 12px 8px 12px;
+    border-radius: 10px;
+    color: white;
+}
+
+.filtre select:focus{
+    border: none;
+    box-shadow: none;
+}

@@ -35,6 +35,7 @@ popUp.forEach((popup) => {
     // Fermer la popup en cliquant en dehors du bloc de contenu
     popup.addEventListener("click", () => {
         popup.classList.remove("apparition");
+        nav.classList.remove("none");
         body.classList.remove("noscroll");
         topLimit = windowHeight * 0.1;
 
@@ -52,6 +53,7 @@ popUp.forEach((popup) => {
         event.stopPropagation();
         popup.classList.remove("apparition");
         body.classList.remove("noscroll");
+        nav.classList.remove("none");
         topLimit = windowHeight * 0.1;
 
         setTimeout(() => {
@@ -59,6 +61,7 @@ popUp.forEach((popup) => {
         }, 200);
     });
 });
+
 
 // P O P   U P   F O R M A T I O N S
 
@@ -87,8 +90,7 @@ popUpFormations.forEach((popup) => {
 
 //Fermeture PopUp
 body.addEventListener("click", () => { 
-    const popups = document.querySelectorAll(".plus-info");
-    popups.forEach((popup) => {
+    popUpFormations.forEach((popup) => {
         popup.classList.remove("apparition");
         setTimeout(() => {
             popup.classList.add("none");
@@ -96,6 +98,19 @@ body.addEventListener("click", () => {
     });
 });
 
+const closeButton = document.querySelectorAll(".close");
+closeButton.forEach((button) =>{
+    button.addEventListener("click", () =>{
+        popUpFormations.forEach((popup) => {
+        popup.classList.remove("apparition");
+        setTimeout(() => {
+            popup.classList.add("none");
+        }, 200);
+    });
+    })
+})
+
+// C A R R O U S E L
 // Carrousel venant de Waqas Bajwa --> https://codepen.io/devbajwa/pen/rNELYyw
 
 class Carousel {
@@ -198,23 +213,15 @@ li.forEach (function(li) {
   })
 })
 
+// N A V B A R
 
-
-let hasScrolled = false;
-window.addEventListener('scroll', function() {
- // Si l'utilisateur n'a pas encore scrollé
-    if (!hasScrolled) {
-        console.log("cc")
-        // Marquer que le scroll a déjà été déclenché pour éviter des actions répétées
-        hasScrolled = true;
+window.addEventListener("scroll", () => {
+    if (window.scrollY === 0){
+        menuDesktop.classList.remove("active-nav-desktop")
+    } else {
+        menuDesktop.classList.add("active-nav-desktop")
     }
-
-    else{
-        setTimeout(() => {
-            menuDesktop.classList.add("active-nav-desktop")
-        }, 100);
-    }
-})
+});
 
 let isInTopZone = false;
 window.addEventListener('mousemove', function(event) {
@@ -232,3 +239,71 @@ window.addEventListener('mousemove', function(event) {
         }
     }
 });
+
+// T A G S   S É L E C T I O N
+
+const selectElement = document.getElementById("tags");
+const uxui = document.querySelectorAll(".uxui");
+const developpement = document.querySelectorAll(".developpement");
+const graphisme = document.querySelectorAll(".graphisme");
+const autre = document.querySelectorAll(".autre");
+const divProjet = document.querySelectorAll(".section-projet");
+
+
+function rowReverse(){
+    divProjet.forEach((div) => {
+        div.classList.remove("row-reverse");
+    });
+
+    let i = 0;
+    divProjet.forEach((div) => {
+        const computedStyle = window.getComputedStyle(div);
+        if (computedStyle.display === "flex") { 
+            i++;
+            if (i % 2 === 0) {
+                div.classList.add("row-reverse");
+            }
+        }
+    });
+}
+rowReverse()
+selectElement.addEventListener("change", (event) => {
+    let tag = event.target.value;
+    developpement.forEach((developpement) => { developpement.style.display = "none"; });
+    uxui.forEach((uxui) => { uxui.style.display = "none"; });
+    graphisme.forEach((graphisme) => { graphisme.style.display = "none"; });
+    autre.forEach((autre) => { autre.style.display = "none"; });
+
+    if (tag === "developpement") {
+        developpement.forEach((developpement) => {
+            developpement.style.display = "flex";
+        });
+    } else if (tag === "uxui") {
+        uxui.forEach((uxui) => {
+            uxui.style.display = "flex";
+        });
+    } else if (tag === "graphisme") {
+        graphisme.forEach((graphisme) => {
+            graphisme.style.display = "flex";
+        });
+    } else if (tag === "autre") {
+        autre.forEach((autre) => {
+            autre.style.display = "flex";
+        });
+    } else if (tag === "tous") {
+        developpement.forEach((developpement) => {
+            developpement.style.display = "flex";
+        });
+        uxui.forEach((uxui) => {
+            uxui.style.display = "flex";
+        });
+        graphisme.forEach((graphisme) => {
+            graphisme.style.display = "flex";
+        });
+        autre.forEach((autre) => {
+            autre.style.display = "flex";
+        });
+    }
+    rowReverse();
+});
+
