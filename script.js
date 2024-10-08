@@ -267,43 +267,46 @@ function rowReverse(){
     });
 }
 rowReverse()
-selectElement.addEventListener("change", (event) => {
-    let tag = event.target.value;
-    developpement.forEach((developpement) => { developpement.style.display = "none"; });
-    uxui.forEach((uxui) => { uxui.style.display = "none"; });
-    graphisme.forEach((graphisme) => { graphisme.style.display = "none"; });
-    autre.forEach((autre) => { autre.style.display = "none"; });
 
-    if (tag === "developpement") {
-        developpement.forEach((developpement) => {
-            developpement.style.display = "flex";
-        });
-    } else if (tag === "uxui") {
-        uxui.forEach((uxui) => {
-            uxui.style.display = "flex";
-        });
-    } else if (tag === "graphisme") {
-        graphisme.forEach((graphisme) => {
-            graphisme.style.display = "flex";
-        });
-    } else if (tag === "autre") {
-        autre.forEach((autre) => {
-            autre.style.display = "flex";
-        });
-    } else if (tag === "tous") {
-        developpement.forEach((developpement) => {
-            developpement.style.display = "flex";
-        });
-        uxui.forEach((uxui) => {
-            uxui.style.display = "flex";
-        });
-        graphisme.forEach((graphisme) => {
-            graphisme.style.display = "flex";
-        });
-        autre.forEach((autre) => {
-            autre.style.display = "flex";
-        });
-    }
-    rowReverse();
-});
+if (document.title === "Mes projets - PINSON Léo développeur web"){
+    selectElement.addEventListener("change", (event) => {
+        let tag = event.target.value;
+        developpement.forEach((developpement) => { developpement.style.display = "none"; });
+        uxui.forEach((uxui) => { uxui.style.display = "none"; });
+        graphisme.forEach((graphisme) => { graphisme.style.display = "none"; });
+        autre.forEach((autre) => { autre.style.display = "none"; });
+
+        if (tag === "developpement") {
+            developpement.forEach((developpement) => {
+                developpement.style.display = "flex";
+            });
+        } else if (tag === "uxui") {
+            uxui.forEach((uxui) => {
+                uxui.style.display = "flex";
+            });
+        } else if (tag === "graphisme") {
+            graphisme.forEach((graphisme) => {
+                graphisme.style.display = "flex";
+            });
+        } else if (tag === "autre") {
+            autre.forEach((autre) => {
+                autre.style.display = "flex";
+            });
+        } else if (tag === "tous") {
+            developpement.forEach((developpement) => {
+                developpement.style.display = "flex";
+            });
+            uxui.forEach((uxui) => {
+                uxui.style.display = "flex";
+            });
+            graphisme.forEach((graphisme) => {
+                graphisme.style.display = "flex";
+            });
+            autre.forEach((autre) => {
+                autre.style.display = "flex";
+            });
+        }
+        rowReverse();
+    });
+}
 

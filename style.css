@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0% 10% 0% 10%;
     height: auto;
-    background: #000311;
+    background: #00020a;
     color: white;
     font-family: 'poppins', sans-serif;
     font-weight: 300;
@@ -473,6 +473,12 @@ a:hover:after {
     transform: scale(0.8);
     transition: opacity 0.2s ease, transform 0.2s ease;
 }
+
+.plus-info span{
+    font-weight: bold;
+    display: flex;
+    margin-top: 3%;
+}
     
 .plus-info.apparition {
     opacity: 1;
@@ -742,6 +748,10 @@ a:hover:after {
     margin: 0;
     padding: 20px;
     gap: 10px;
+}
+
+.bloc-popup-droite li{
+    text-align: start;
 }
 
 .description-popup{
@@ -1368,10 +1378,11 @@ footer {
     background-color: rgba(255, 255, 255, 0.084);
     padding: 8px 12px 8px 12px;
     border-radius: 10px;
-    color: white;
+    color: #5F5DE2;
 }
 
 .filtre select:focus{
     border: none;
     box-shadow: none;
 }
+
