@@ -228,13 +228,11 @@ window.addEventListener('mousemove', function(event) {
     
     if (event.clientY <= topLimit) {
         if (!isInTopZone) {
-            console.log("La souris est dans la zone des 10% supérieurs.");
             isInTopZone = true;
             menuDesktop.classList.remove("active-nav-desktop")
         }
     } else {
         if (isInTopZone) {
-            console.log("La souris est sortie de la zone des 10% supérieurs.");
             isInTopZone = false;
         }
     }
