@@ -7,6 +7,44 @@ const windowHeight = window.innerHeight;
 const nav = document.querySelector("nav");
 let topLimit = windowHeight * 0.1;
 
+// p i g e o n
+
+const cards = [
+  { start: "Le Coca-Cola était à l'origine", end: "un médicament contre les maux de tête." },
+  { start: "Les escargots peuvent dormir pendant", end: "trois ans d'affilée." },
+  { start: "La langue d'une baleine bleue pèse", end: "autant qu’un éléphant." },
+  { start: "Le mot 'robot' vient du", end: "tchèque et signifie 'travail forcé'." },
+  { start: "Il est illégal de posséder", end: "une seule grenouille en Australie occidentale." },
+  { start: "Les papillons goûtent avec", end: "leurs pieds." },
+  { start: "En Suisse, il est interdit de", end: "posséder un cochon d'Inde seul." },
+  { start: "Le plus grand désert du monde est", end: "l’Antarctique." },
+  { start: "La Tour Eiffel peut grandir de", end: "15 cm en été." },
+  { start: "Le cœur d'une crevette est", end: "dans sa tête." },
+  { start: "Les vaches ont", end: "des meilleurs amis et sont stressées quand elles sont séparées." },
+  { start: "Le fruit le plus cultivé au monde est", end: "la banane." },
+  { start: "Les carottes étaient à l’origine", end: "violettes." },
+  { start: "Le jour où il pleut le plus sur Terre est", end: "le 4 juillet." },
+  { start: "Les koalas ont", end: "des empreintes digitales presque humaines." },
+  { start: "La Terre est plus proche du soleil en", end: "janvier qu’en juillet." },
+  { start: "Les requins existent depuis", end: "avant les arbres." },
+  { start: "Une crevette-mante peut", end: "casser une vitre d’aquarium." },
+  { start: "Napoléon avait", end: "une peur bleue des chats." },
+  { start: "Il est possible de faire du pop-corn avec", end: "des grains de sable chauffés." }
+];
+
+let currentIndex = 0;
+
+function nextCard() {
+  currentIndex = (currentIndex + 1) % cards.length;
+  document.getElementById("start-pigeon").textContent = cards[currentIndex].start;
+  document.getElementById("end-pigeon").textContent = cards[currentIndex].end;
+}
+
+// Initialisation
+window.onload = () => {
+  document.getElementById("start-pigeon").textContent = cards[0].start;
+  document.getElementById("end-pigeon").textContent = cards[0].end;
+};
 
 
 // P O P   U P   P R O J E T S
@@ -308,42 +346,5 @@ if (document.title === "Mes projets - PINSON Léo développeur web"){
     });
 }
 
-// p i g e o n
 
-const cards = [
-  { start: "Le Coca-Cola était à l'origine", end: "un médicament contre les maux de tête." },
-  { start: "Les escargots peuvent dormir pendant", end: "trois ans d'affilée." },
-  { start: "La langue d'une baleine bleue pèse", end: "autant qu’un éléphant." },
-  { start: "Le mot 'robot' vient du", end: "tchèque et signifie 'travail forcé'." },
-  { start: "Il est illégal de posséder", end: "une seule grenouille en Australie occidentale." },
-  { start: "Les papillons goûtent avec", end: "leurs pieds." },
-  { start: "En Suisse, il est interdit de", end: "posséder un cochon d'Inde seul." },
-  { start: "Le plus grand désert du monde est", end: "l’Antarctique." },
-  { start: "La Tour Eiffel peut grandir de", end: "15 cm en été." },
-  { start: "Le cœur d'une crevette est", end: "dans sa tête." },
-  { start: "Les vaches ont", end: "des meilleurs amis et sont stressées quand elles sont séparées." },
-  { start: "Le fruit le plus cultivé au monde est", end: "la banane." },
-  { start: "Les carottes étaient à l’origine", end: "violettes." },
-  { start: "Le jour où il pleut le plus sur Terre est", end: "le 4 juillet." },
-  { start: "Les koalas ont", end: "des empreintes digitales presque humaines." },
-  { start: "La Terre est plus proche du soleil en", end: "janvier qu’en juillet." },
-  { start: "Les requins existent depuis", end: "avant les arbres." },
-  { start: "Une crevette-mante peut", end: "casser une vitre d’aquarium." },
-  { start: "Napoléon avait", end: "une peur bleue des chats." },
-  { start: "Il est possible de faire du pop-corn avec", end: "des grains de sable chauffés." }
-];
-
-let currentIndex = 0;
-
-function nextCard() {
-  currentIndex = (currentIndex + 1) % cards.length;
-  document.getElementById("start-pigeon").textContent = cards[currentIndex].start;
-  document.getElementById("end-pigeon").textContent = cards[currentIndex].end;
-}
-
-// Initialisation
-window.onload = () => {
-  document.getElementById("start-pigeon").textContent = cards[0].start;
-  document.getElementById("end-pigeon").textContent = cards[0].end;
-};
 
