@@ -3,17 +3,112 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pigeon Pigeon Mobile</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Pigeon Pigeon</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: #fef6e4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container-pigeon {
+      width: 100%;
+      max-width: 400px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 30px 20px;
+      box-sizing: border-box;
+    }
+
+    .affirmation-pigeon {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      font-size: 1.5rem;
+      padding-top: 20px;
+    }
+
+    #start-pigeon {
+      color: #001858;
+      font-weight: bold;
+    }
+
+    #end-pigeon {
+      color: #f582ae;
+      font-style: italic;
+    }
+
+    .button-pigeon {
+      padding: 15px;
+      font-size: 1.2rem;
+      border: none;
+      background-color: #8bd3dd;
+      color: #001858;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .button-pigeon:hover {
+      background-color: #a3d2ca;
+    }
+  </style>
 </head>
 <body>
   <div class="container-pigeon">
     <div class="affirmation-pigeon">
-      <p id="start-pigeon">Voici le début...</p>
-      <p id="end-pigeon">et voici la fin !</p>
+      <p id="start-pigeon">Chargement...</p>
+      <p id="end-pigeon">...</p>
     </div>
     <button class="button-pigeon" onclick="nextCard()">Carte suivante</button>
   </div>
-  <script src="script.js"></script>
+
+  <script>
+    const cards = [
+      { start: "Le Coca-Cola était à l'origine", end: "un médicament contre les maux de tête." },
+      { start: "Les escargots peuvent dormir pendant", end: "trois ans d'affilée." },
+      { start: "La langue d'une baleine bleue pèse", end: "autant qu’un éléphant." },
+      { start: "Le mot 'robot' vient du", end: "tchèque et signifie 'travail forcé'." },
+      { start: "Il est illégal de posséder", end: "une seule grenouille en Australie occidentale." },
+      { start: "Les papillons goûtent avec", end: "leurs pieds." },
+      { start: "En Suisse, il est interdit de", end: "posséder un cochon d'Inde seul." },
+      { start: "Le plus grand désert du monde est", end: "l’Antarctique." },
+      { start: "La Tour Eiffel peut grandir de", end: "15 cm en été." },
+      { start: "Le cœur d'une crevette est", end: "dans sa tête." },
+      { start: "Les vaches ont", end: "des meilleurs amis et sont stressées quand elles sont séparées." },
+      { start: "Le fruit le plus cultivé au monde est", end: "la banane." },
+      { start: "Les carottes étaient à l’origine", end: "violettes." },
+      { start: "Le jour où il pleut le plus sur Terre est", end: "le 4 juillet." },
+      { start: "Les koalas ont", end: "des empreintes digitales presque humaines." },
+      { start: "La Terre est plus proche du soleil en", end: "janvier qu’en juillet." },
+      { start: "Les requins existent depuis", end: "avant les arbres." },
+      { start: "Une crevette-mante peut", end: "casser une vitre d’aquarium." },
+      { start: "Napoléon avait", end: "une peur bleue des chats." },
+      { start: "Il est possible de faire du pop-corn avec", end: "des grains de sable chauffés." }
+    ];
+
+    let currentIndex = 0;
+
+    function nextCard() {
+      currentIndex = (currentIndex + 1) % cards.length;
+      document.getElementById("start-pigeon").textContent = cards[currentIndex].start;
+      document.getElementById("end-pigeon").textContent = cards[currentIndex].end;
+    }
+
+    // Initialiser la première carte
+    window.onload = () => {
+      document.getElementById("start-pigeon").textContent = cards[0].start;
+      document.getElementById("end-pigeon").textContent = cards[0].end;
+    };
+  </script>
 </body>
 </html>
